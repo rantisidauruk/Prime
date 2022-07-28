@@ -1,0 +1,725 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7E3999CF288CE6410072C7BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E3999CE288CE6410072C7BD /* Assets.xcassets */; };
+		7E3999D2288CE6410072C7BD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E3999D1288CE6410072C7BD /* Preview Assets.xcassets */; };
+		7E3999D4288CE6410072C7BD /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3999D3288CE6410072C7BD /* Persistence.swift */; };
+		7E3999D7288CE6410072C7BD /* Prime.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7E3999D5288CE6410072C7BD /* Prime.xcdatamodeld */; };
+		7E3999E1288CE6410072C7BD /* PrimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3999E0288CE6410072C7BD /* PrimeTests.swift */; };
+		7E3999EB288CE6410072C7BD /* PrimeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3999EA288CE6410072C7BD /* PrimeUITests.swift */; };
+		7E3999ED288CE6410072C7BD /* PrimeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3999EC288CE6410072C7BD /* PrimeUITestsLaunchTests.swift */; };
+		7EFE242A2892D9DF009CA1A8 /* Poppins-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7EFE24172892D9DF009CA1A8 /* Poppins-LightItalic.ttf */; };
+		7EFE242B2892D9DF009CA1A8 /* Poppins-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7EFE24182892D9DF009CA1A8 /* Poppins-BoldItalic.ttf */; };
+		7EFE242C2892D9DF009CA1A8 /* Poppins-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7EFE24192892D9DF009CA1A8 /* Poppins-ExtraLightItalic.ttf */; };
+		7EFE242D2892D9DF009CA1A8 /* Poppins-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7EFE241A2892D9DF009CA1A8 /* Poppins-Black.ttf */; };
+		7EFE242E2892D9DF009CA1A8 /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7EFE241B2892D9DF009CA1A8 /* Poppins-SemiBold.ttf */; };
+		7EFE242F2892D9DF009CA1A8 /* Poppins-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7EFE241C2892D9DF009CA1A8 /* Poppins-SemiBoldItalic.ttf */; };
+		7EFE24302892D9DF009CA1A8 /* Poppins-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7EFE241D2892D9DF009CA1A8 /* Poppins-ExtraBoldItalic.ttf */; };
+		7EFE24312892D9DF009CA1A8 /* Poppins-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7EFE241E2892D9DF009CA1A8 /* Poppins-ExtraBold.ttf */; };
+		7EFE24322892D9DF009CA1A8 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7EFE241F2892D9DF009CA1A8 /* OFL.txt */; };
+		7EFE24332892D9DF009CA1A8 /* Poppins-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7EFE24202892D9DF009CA1A8 /* Poppins-MediumItalic.ttf */; };
+		7EFE24342892D9DF009CA1A8 /* Poppins-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7EFE24212892D9DF009CA1A8 /* Poppins-ExtraLight.ttf */; };
+		7EFE24352892D9DF009CA1A8 /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7EFE24222892D9DF009CA1A8 /* Poppins-Regular.ttf */; };
+		7EFE24362892D9DF009CA1A8 /* Poppins-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7EFE24232892D9DF009CA1A8 /* Poppins-Italic.ttf */; };
+		7EFE24372892D9DF009CA1A8 /* Poppins-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7EFE24242892D9DF009CA1A8 /* Poppins-Light.ttf */; };
+		7EFE24382892D9DF009CA1A8 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7EFE24252892D9DF009CA1A8 /* Poppins-Bold.ttf */; };
+		7EFE24392892D9DF009CA1A8 /* Poppins-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7EFE24262892D9DF009CA1A8 /* Poppins-BlackItalic.ttf */; };
+		7EFE243A2892D9DF009CA1A8 /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7EFE24272892D9DF009CA1A8 /* Poppins-Medium.ttf */; };
+		7EFE243B2892D9DF009CA1A8 /* Poppins-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7EFE24282892D9DF009CA1A8 /* Poppins-Thin.ttf */; };
+		7EFE243C2892D9DF009CA1A8 /* Poppins-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7EFE24292892D9DF009CA1A8 /* Poppins-ThinItalic.ttf */; };
+		7EFE243E2892DDD0009CA1A8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFE243D2892DDD0009CA1A8 /* ContentView.swift */; };
+		7EFE24402892DDE6009CA1A8 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFE243F2892DDE6009CA1A8 /* Home.swift */; };
+		7EFE24422892DE71009CA1A8 /* DynamicFilteredView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFE24412892DE71009CA1A8 /* DynamicFilteredView.swift */; };
+		7EFE24442892DEC0009CA1A8 /* TaskPlannerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFE24432892DEC0009CA1A8 /* TaskPlannerViewModel.swift */; };
+		7EFE24462892DF40009CA1A8 /* QuoteText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFE24452892DF40009CA1A8 /* QuoteText.swift */; };
+		7EFE24482892DF55009CA1A8 /* TaskPlanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFE24472892DF55009CA1A8 /* TaskPlanner.swift */; };
+		7EFE244A2892DF9A009CA1A8 /* PriorityGuideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFE24492892DF9A009CA1A8 /* PriorityGuideView.swift */; };
+		7EFE244C2892DFB4009CA1A8 /* ReflectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFE244B2892DFB4009CA1A8 /* ReflectionView.swift */; };
+		7EFE244E2892E064009CA1A8 /* Prime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFE244D2892E064009CA1A8 /* Prime.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7E3999DD288CE6410072C7BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7E3999BF288CE63F0072C7BD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7E3999C6288CE63F0072C7BD;
+			remoteInfo = Prime;
+		};
+		7E3999E7288CE6410072C7BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7E3999BF288CE63F0072C7BD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7E3999C6288CE63F0072C7BD;
+			remoteInfo = Prime;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7E3999C7288CE63F0072C7BD /* Prime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Prime.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E3999CE288CE6410072C7BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7E3999D1288CE6410072C7BD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7E3999D3288CE6410072C7BD /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		7E3999D6288CE6410072C7BD /* Prime.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Prime.xcdatamodel; sourceTree = "<group>"; };
+		7E3999DC288CE6410072C7BD /* PrimeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrimeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E3999E0288CE6410072C7BD /* PrimeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimeTests.swift; sourceTree = "<group>"; };
+		7E3999E6288CE6410072C7BD /* PrimeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrimeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E3999EA288CE6410072C7BD /* PrimeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimeUITests.swift; sourceTree = "<group>"; };
+		7E3999EC288CE6410072C7BD /* PrimeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7EFE24172892D9DF009CA1A8 /* Poppins-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-LightItalic.ttf"; sourceTree = "<group>"; };
+		7EFE24182892D9DF009CA1A8 /* Poppins-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-BoldItalic.ttf"; sourceTree = "<group>"; };
+		7EFE24192892D9DF009CA1A8 /* Poppins-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		7EFE241A2892D9DF009CA1A8 /* Poppins-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Black.ttf"; sourceTree = "<group>"; };
+		7EFE241B2892D9DF009CA1A8 /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
+		7EFE241C2892D9DF009CA1A8 /* Poppins-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		7EFE241D2892D9DF009CA1A8 /* Poppins-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		7EFE241E2892D9DF009CA1A8 /* Poppins-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraBold.ttf"; sourceTree = "<group>"; };
+		7EFE241F2892D9DF009CA1A8 /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
+		7EFE24202892D9DF009CA1A8 /* Poppins-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-MediumItalic.ttf"; sourceTree = "<group>"; };
+		7EFE24212892D9DF009CA1A8 /* Poppins-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraLight.ttf"; sourceTree = "<group>"; };
+		7EFE24222892D9DF009CA1A8 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
+		7EFE24232892D9DF009CA1A8 /* Poppins-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Italic.ttf"; sourceTree = "<group>"; };
+		7EFE24242892D9DF009CA1A8 /* Poppins-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Light.ttf"; sourceTree = "<group>"; };
+		7EFE24252892D9DF009CA1A8 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
+		7EFE24262892D9DF009CA1A8 /* Poppins-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-BlackItalic.ttf"; sourceTree = "<group>"; };
+		7EFE24272892D9DF009CA1A8 /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
+		7EFE24282892D9DF009CA1A8 /* Poppins-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Thin.ttf"; sourceTree = "<group>"; };
+		7EFE24292892D9DF009CA1A8 /* Poppins-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ThinItalic.ttf"; sourceTree = "<group>"; };
+		7EFE243D2892DDD0009CA1A8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ContentView.swift; path = ../ContentView.swift; sourceTree = "<group>"; };
+		7EFE243F2892DDE6009CA1A8 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Home.swift; path = ../Home.swift; sourceTree = "<group>"; };
+		7EFE24412892DE71009CA1A8 /* DynamicFilteredView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DynamicFilteredView.swift; path = ../DynamicFilteredView.swift; sourceTree = "<group>"; };
+		7EFE24432892DEC0009CA1A8 /* TaskPlannerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskPlannerViewModel.swift; sourceTree = "<group>"; };
+		7EFE24452892DF40009CA1A8 /* QuoteText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteText.swift; sourceTree = "<group>"; };
+		7EFE24472892DF55009CA1A8 /* TaskPlanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskPlanner.swift; sourceTree = "<group>"; };
+		7EFE24492892DF9A009CA1A8 /* PriorityGuideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PriorityGuideView.swift; path = ../PriorityGuideView.swift; sourceTree = "<group>"; };
+		7EFE244B2892DFB4009CA1A8 /* ReflectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ReflectionView.swift; path = ../ReflectionView.swift; sourceTree = "<group>"; };
+		7EFE244D2892E064009CA1A8 /* Prime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prime.swift; sourceTree = "<group>"; };
+		7EFE244F2892E170009CA1A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7E3999C4288CE63F0072C7BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E3999D9288CE6410072C7BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E3999E3288CE6410072C7BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7E3999BE288CE63F0072C7BD = {
+			isa = PBXGroup;
+			children = (
+				7E3999C9288CE63F0072C7BD /* Prime */,
+				7E3999DF288CE6410072C7BD /* PrimeTests */,
+				7E3999E9288CE6410072C7BD /* PrimeUITests */,
+				7E3999C8288CE63F0072C7BD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7E3999C8288CE63F0072C7BD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7E3999C7288CE63F0072C7BD /* Prime.app */,
+				7E3999DC288CE6410072C7BD /* PrimeTests.xctest */,
+				7E3999E6288CE6410072C7BD /* PrimeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7E3999C9288CE63F0072C7BD /* Prime */ = {
+			isa = PBXGroup;
+			children = (
+				7EFE244F2892E170009CA1A8 /* Info.plist */,
+				7EFE243D2892DDD0009CA1A8 /* ContentView.swift */,
+				7EFE243F2892DDE6009CA1A8 /* Home.swift */,
+				7EFE24412892DE71009CA1A8 /* DynamicFilteredView.swift */,
+				7EFE24432892DEC0009CA1A8 /* TaskPlannerViewModel.swift */,
+				7EFE244D2892E064009CA1A8 /* Prime.swift */,
+				7EFE24492892DF9A009CA1A8 /* PriorityGuideView.swift */,
+				7EFE24452892DF40009CA1A8 /* QuoteText.swift */,
+				7EFE24472892DF55009CA1A8 /* TaskPlanner.swift */,
+				7EFE244B2892DFB4009CA1A8 /* ReflectionView.swift */,
+				7EFE24162892D9C6009CA1A8 /* Poppins */,
+				7E3999D3288CE6410072C7BD /* Persistence.swift */,
+				7E3999CE288CE6410072C7BD /* Assets.xcassets */,
+				7E3999D5288CE6410072C7BD /* Prime.xcdatamodeld */,
+				7E3999D0288CE6410072C7BD /* Preview Content */,
+			);
+			path = Prime;
+			sourceTree = "<group>";
+		};
+		7E3999D0288CE6410072C7BD /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				7E3999D1288CE6410072C7BD /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7E3999DF288CE6410072C7BD /* PrimeTests */ = {
+			isa = PBXGroup;
+			children = (
+				7E3999E0288CE6410072C7BD /* PrimeTests.swift */,
+			);
+			path = PrimeTests;
+			sourceTree = "<group>";
+		};
+		7E3999E9288CE6410072C7BD /* PrimeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7E3999EA288CE6410072C7BD /* PrimeUITests.swift */,
+				7E3999EC288CE6410072C7BD /* PrimeUITestsLaunchTests.swift */,
+			);
+			path = PrimeUITests;
+			sourceTree = "<group>";
+		};
+		7EFE24162892D9C6009CA1A8 /* Poppins */ = {
+			isa = PBXGroup;
+			children = (
+				7EFE241F2892D9DF009CA1A8 /* OFL.txt */,
+				7EFE241A2892D9DF009CA1A8 /* Poppins-Black.ttf */,
+				7EFE24262892D9DF009CA1A8 /* Poppins-BlackItalic.ttf */,
+				7EFE24252892D9DF009CA1A8 /* Poppins-Bold.ttf */,
+				7EFE24182892D9DF009CA1A8 /* Poppins-BoldItalic.ttf */,
+				7EFE241E2892D9DF009CA1A8 /* Poppins-ExtraBold.ttf */,
+				7EFE241D2892D9DF009CA1A8 /* Poppins-ExtraBoldItalic.ttf */,
+				7EFE24212892D9DF009CA1A8 /* Poppins-ExtraLight.ttf */,
+				7EFE24192892D9DF009CA1A8 /* Poppins-ExtraLightItalic.ttf */,
+				7EFE24232892D9DF009CA1A8 /* Poppins-Italic.ttf */,
+				7EFE24242892D9DF009CA1A8 /* Poppins-Light.ttf */,
+				7EFE24172892D9DF009CA1A8 /* Poppins-LightItalic.ttf */,
+				7EFE24272892D9DF009CA1A8 /* Poppins-Medium.ttf */,
+				7EFE24202892D9DF009CA1A8 /* Poppins-MediumItalic.ttf */,
+				7EFE24222892D9DF009CA1A8 /* Poppins-Regular.ttf */,
+				7EFE241B2892D9DF009CA1A8 /* Poppins-SemiBold.ttf */,
+				7EFE241C2892D9DF009CA1A8 /* Poppins-SemiBoldItalic.ttf */,
+				7EFE24282892D9DF009CA1A8 /* Poppins-Thin.ttf */,
+				7EFE24292892D9DF009CA1A8 /* Poppins-ThinItalic.ttf */,
+			);
+			path = Poppins;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7E3999C6288CE63F0072C7BD /* Prime */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E3999F0288CE6410072C7BD /* Build configuration list for PBXNativeTarget "Prime" */;
+			buildPhases = (
+				7E3999C3288CE63F0072C7BD /* Sources */,
+				7E3999C4288CE63F0072C7BD /* Frameworks */,
+				7E3999C5288CE63F0072C7BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Prime;
+			productName = Prime;
+			productReference = 7E3999C7288CE63F0072C7BD /* Prime.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7E3999DB288CE6410072C7BD /* PrimeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E3999F3288CE6410072C7BD /* Build configuration list for PBXNativeTarget "PrimeTests" */;
+			buildPhases = (
+				7E3999D8288CE6410072C7BD /* Sources */,
+				7E3999D9288CE6410072C7BD /* Frameworks */,
+				7E3999DA288CE6410072C7BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7E3999DE288CE6410072C7BD /* PBXTargetDependency */,
+			);
+			name = PrimeTests;
+			productName = PrimeTests;
+			productReference = 7E3999DC288CE6410072C7BD /* PrimeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7E3999E5288CE6410072C7BD /* PrimeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E3999F6288CE6410072C7BD /* Build configuration list for PBXNativeTarget "PrimeUITests" */;
+			buildPhases = (
+				7E3999E2288CE6410072C7BD /* Sources */,
+				7E3999E3288CE6410072C7BD /* Frameworks */,
+				7E3999E4288CE6410072C7BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7E3999E8288CE6410072C7BD /* PBXTargetDependency */,
+			);
+			name = PrimeUITests;
+			productName = PrimeUITests;
+			productReference = 7E3999E6288CE6410072C7BD /* PrimeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7E3999BF288CE63F0072C7BD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					7E3999C6288CE63F0072C7BD = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+					7E3999DB288CE6410072C7BD = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = 7E3999C6288CE63F0072C7BD;
+					};
+					7E3999E5288CE6410072C7BD = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = 7E3999C6288CE63F0072C7BD;
+					};
+				};
+			};
+			buildConfigurationList = 7E3999C2288CE63F0072C7BD /* Build configuration list for PBXProject "Prime" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7E3999BE288CE63F0072C7BD;
+			productRefGroup = 7E3999C8288CE63F0072C7BD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7E3999C6288CE63F0072C7BD /* Prime */,
+				7E3999DB288CE6410072C7BD /* PrimeTests */,
+				7E3999E5288CE6410072C7BD /* PrimeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7E3999C5288CE63F0072C7BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EFE242D2892D9DF009CA1A8 /* Poppins-Black.ttf in Resources */,
+				7EFE24332892D9DF009CA1A8 /* Poppins-MediumItalic.ttf in Resources */,
+				7EFE24322892D9DF009CA1A8 /* OFL.txt in Resources */,
+				7EFE24362892D9DF009CA1A8 /* Poppins-Italic.ttf in Resources */,
+				7EFE242F2892D9DF009CA1A8 /* Poppins-SemiBoldItalic.ttf in Resources */,
+				7EFE242E2892D9DF009CA1A8 /* Poppins-SemiBold.ttf in Resources */,
+				7EFE24302892D9DF009CA1A8 /* Poppins-ExtraBoldItalic.ttf in Resources */,
+				7E3999D2288CE6410072C7BD /* Preview Assets.xcassets in Resources */,
+				7EFE242A2892D9DF009CA1A8 /* Poppins-LightItalic.ttf in Resources */,
+				7EFE243B2892D9DF009CA1A8 /* Poppins-Thin.ttf in Resources */,
+				7EFE24312892D9DF009CA1A8 /* Poppins-ExtraBold.ttf in Resources */,
+				7EFE24352892D9DF009CA1A8 /* Poppins-Regular.ttf in Resources */,
+				7EFE243C2892D9DF009CA1A8 /* Poppins-ThinItalic.ttf in Resources */,
+				7EFE24372892D9DF009CA1A8 /* Poppins-Light.ttf in Resources */,
+				7EFE24382892D9DF009CA1A8 /* Poppins-Bold.ttf in Resources */,
+				7EFE242C2892D9DF009CA1A8 /* Poppins-ExtraLightItalic.ttf in Resources */,
+				7EFE243A2892D9DF009CA1A8 /* Poppins-Medium.ttf in Resources */,
+				7E3999CF288CE6410072C7BD /* Assets.xcassets in Resources */,
+				7EFE242B2892D9DF009CA1A8 /* Poppins-BoldItalic.ttf in Resources */,
+				7EFE24392892D9DF009CA1A8 /* Poppins-BlackItalic.ttf in Resources */,
+				7EFE24342892D9DF009CA1A8 /* Poppins-ExtraLight.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E3999DA288CE6410072C7BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E3999E4288CE6410072C7BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7E3999C3288CE63F0072C7BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EFE24422892DE71009CA1A8 /* DynamicFilteredView.swift in Sources */,
+				7EFE244C2892DFB4009CA1A8 /* ReflectionView.swift in Sources */,
+				7E3999D4288CE6410072C7BD /* Persistence.swift in Sources */,
+				7EFE24442892DEC0009CA1A8 /* TaskPlannerViewModel.swift in Sources */,
+				7EFE244A2892DF9A009CA1A8 /* PriorityGuideView.swift in Sources */,
+				7EFE24462892DF40009CA1A8 /* QuoteText.swift in Sources */,
+				7E3999D7288CE6410072C7BD /* Prime.xcdatamodeld in Sources */,
+				7EFE24402892DDE6009CA1A8 /* Home.swift in Sources */,
+				7EFE244E2892E064009CA1A8 /* Prime.swift in Sources */,
+				7EFE243E2892DDD0009CA1A8 /* ContentView.swift in Sources */,
+				7EFE24482892DF55009CA1A8 /* TaskPlanner.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E3999D8288CE6410072C7BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E3999E1288CE6410072C7BD /* PrimeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E3999E2288CE6410072C7BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E3999ED288CE6410072C7BD /* PrimeUITestsLaunchTests.swift in Sources */,
+				7E3999EB288CE6410072C7BD /* PrimeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7E3999DE288CE6410072C7BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7E3999C6288CE63F0072C7BD /* Prime */;
+			targetProxy = 7E3999DD288CE6410072C7BD /* PBXContainerItemProxy */;
+		};
+		7E3999E8288CE6410072C7BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7E3999C6288CE63F0072C7BD /* Prime */;
+			targetProxy = 7E3999E7288CE6410072C7BD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		7E3999EE288CE6410072C7BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7E3999EF288CE6410072C7BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7E3999F1288CE6410072C7BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Prime/Preview Content\"";
+				DEVELOPMENT_TEAM = 8ABMX974AC;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Prime/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rantisidauruk.Prime;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7E3999F2288CE6410072C7BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Prime/Preview Content\"";
+				DEVELOPMENT_TEAM = 8ABMX974AC;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Prime/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rantisidauruk.Prime;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7E3999F4288CE6410072C7BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8ABMX974AC;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rantisidauruk.PrimeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Prime.app/Prime";
+			};
+			name = Debug;
+		};
+		7E3999F5288CE6410072C7BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8ABMX974AC;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rantisidauruk.PrimeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Prime.app/Prime";
+			};
+			name = Release;
+		};
+		7E3999F7288CE6410072C7BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8ABMX974AC;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rantisidauruk.PrimeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Prime;
+			};
+			name = Debug;
+		};
+		7E3999F8288CE6410072C7BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8ABMX974AC;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rantisidauruk.PrimeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Prime;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7E3999C2288CE63F0072C7BD /* Build configuration list for PBXProject "Prime" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E3999EE288CE6410072C7BD /* Debug */,
+				7E3999EF288CE6410072C7BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7E3999F0288CE6410072C7BD /* Build configuration list for PBXNativeTarget "Prime" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E3999F1288CE6410072C7BD /* Debug */,
+				7E3999F2288CE6410072C7BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7E3999F3288CE6410072C7BD /* Build configuration list for PBXNativeTarget "PrimeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E3999F4288CE6410072C7BD /* Debug */,
+				7E3999F5288CE6410072C7BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7E3999F6288CE6410072C7BD /* Build configuration list for PBXNativeTarget "PrimeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E3999F7288CE6410072C7BD /* Debug */,
+				7E3999F8288CE6410072C7BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7E3999D5288CE6410072C7BD /* Prime.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7E3999D6288CE6410072C7BD /* Prime.xcdatamodel */,
+			);
+			currentVersion = 7E3999D6288CE6410072C7BD /* Prime.xcdatamodel */;
+			path = Prime.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 7E3999BF288CE63F0072C7BD /* Project object */;
+}
