@@ -135,7 +135,7 @@ struct Home: View {
 			}
 		}
 		.ignoresSafeArea(.container, edges: .top)
-	}
+		.preferredColorScheme(.light)}
 	
 	
 	//MARK: Tasks View
@@ -180,7 +180,7 @@ struct Home: View {
 									) {
 										taskModel.editTask = task
 										taskModel.addNewTask.toggle()
-										task.isCompleted = true
+									//	task.isCompleted = true
 									}
 								)
 							}
@@ -215,8 +215,7 @@ struct Home: View {
 							.foregroundColor(Color("blackCustom"))
 							.background(Color("tagBG"))
 							.cornerRadius(5)
-						
-						Text(dateToString(taskDeadlineString:task.taskDeadline ?? Date()))
+												Text(deadlineToString(taskDeadlineString:task.taskDeadline ?? Date()))
 							.font(.custom("Poppins-Regular", size: 16))
 							.foregroundColor(Color("blackCustom"))
 						
@@ -268,6 +267,7 @@ struct Home: View {
 			}
 			.sheet(isPresented: $showingReflection) {
 				ReflectionView(taskTitle: title, taskTag: tag, taskPriority: priority, taskDate: date, taskReflection: reflection)
+				//ReflectionView()
 			}
 			
 		}

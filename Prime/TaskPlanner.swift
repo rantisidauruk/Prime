@@ -31,12 +31,12 @@ struct TaskPlanner: View {
 	let textLimit = 15
 	let dateFormatter = DateFormatter()
 	
-	init() {
-		UITableView.appearance().separatorStyle = .none
-		UITableViewCell.appearance().backgroundColor = .white
-		UITableView.appearance().backgroundColor = .white
-		UINavigationBar.appearance().backgroundColor = .white
-	}
+	//	init() {
+	//		UITableView.appearance().separatorStyle = .none
+	//		UITableViewCell.appearance().backgroundColor = .white
+	//		UITableView.appearance().backgroundColor = .white
+	//		UINavigationBar.appearance().backgroundColor = .white
+	//	}
 	
 	var body: some View {
 		
@@ -60,8 +60,10 @@ struct TaskPlanner: View {
 						Text ("What expertise?").font(Font.custom("Poppins-Regular", size: 14))
 					}.listRowBackground(Color("blackCustom").opacity(0.02))
 					
+					//INIIIIIII
+					
 					Section{
-						DatePicker("Select Date", selection: $taskDeadline, in: Date()...,  displayedComponents: .date)
+						DatePicker("Select Date", selection: $taskDeadline, displayedComponents: .date)
 					} header: {
 						Text ("When is the deadline?").font(Font.custom("Poppins-Regular", size: 14))
 					}.listRowBackground(Color("blackCustom").opacity(0.02))
@@ -116,8 +118,8 @@ struct TaskPlanner: View {
 			}
 			
 			.listStyle(.insetGrouped)
-			.navigationTitle("Planner")
-			.navigationBarTitleDisplayMode(.inline)
+			.navigationBarTitle("Planner", displayMode: .inline)
+			//.navigationBarTitleDisplayMode(.inline)
 			//MARK: Disbaling Dismiss on Swipe
 			.interactiveDismissDisabled()
 			//MARK: Action Buttons
@@ -127,9 +129,10 @@ struct TaskPlanner: View {
 						if let task = taskModel.editTask{
 							if taskReflection == "" {
 								task.taskReflection = "Oops, you didn't fill in the reflection when you completed this task earlier."
-								
+								task.isCompleted = true
 							} else {
-									task.taskReflection = taskReflection
+								task.taskReflection = taskReflection
+								task.isCompleted = true
 							}
 						}
 						else {
@@ -142,9 +145,8 @@ struct TaskPlanner: View {
 							task.taskPriority = taskPriority
 							task.taskReflection = taskReflection
 						}
-						
 						try? context.save()
-						isCompleted = true
+						
 						dismiss()
 					}
 					.foregroundColor(Color("secondaryColor"))

@@ -1,8 +1,8 @@
 //
-//  ReflectionView.swift
+//  ReflectionFile.swift
 //  Prime
 //
-//  Created by Ranti Sidauruk on 21/07/22.
+//  Created by Ranti Sidauruk on 30/07/22.
 //
 
 import SwiftUI
@@ -23,81 +23,90 @@ struct ReflectionView: View {
 		self.taskDate = taskDate
 		self.taskReflection = taskReflection
 		//Use this if NavigationBarTitle is with Large Font
-		UINavigationBar.appearance().largeTitleTextAttributes = [.foregroundColor: UIColor.white]
+		UINavigationBar.appearance().largeTitleTextAttributes = [.foregroundColor: UIColor.orange]
 		
 		//Use this if NavigationBarTitle is with displayMode = .inline
-		UINavigationBar.appearance().titleTextAttributes = [.foregroundColor: UIColor.white]
+		UINavigationBar.appearance().titleTextAttributes = [.foregroundColor: UIColor.orange]
+		//UINavigationBar.appearance().backgroundColor = UIColor.clear
+		
 	}
 	
 	var body: some View {
 		
-		
 		NavigationView{
-			VStack (spacing:100){
-				Image("QuotesBG")
-					.resizable()
-					.scaledToFit()
-					.overlay(
-						VStack(alignment: .leading, spacing: 10){
-							HStack{
-								Text("\(taskTitle)")
-									.font(.custom("Poppins-Regular", size: 17))
-									.foregroundColor(Color.white)
+			ScrollView(.vertical, showsIndicators: false){
+				LazyVStack(spacing: 0, pinnedViews: [.sectionHeaders]){
+					
+					
+					Image("QuotesBG")
+						.resizable()
+						.scaledToFit()
+						.overlay(
+							VStack(alignment: .leading, spacing: 10){
+								HStack{
+									Text("\(taskTitle)")
+										.font(.custom("Poppins-Regular", size: 17))
+										.foregroundColor(Color.white)
+									
+									Spacer()
+									
+									Text("\(taskPriority)")
+										.font(.custom("Poppins-Regular", size: 16))
+										.foregroundColor(Color.white)
+								}
 								
-								Spacer()
-								
-								Text("\(taskPriority)")
+								Text("\(taskTag)")
+									.padding(5)
 									.font(.custom("Poppins-Regular", size: 16))
-									.foregroundColor(Color.white)
-							}
-							
-							Text("\(taskTag)")
-								.padding(5)
-								.font(.custom("Poppins-Regular", size: 16))
-								.foregroundColor(Color("blackCustom"))
-								.background(Color("tagBG"))
-								.cornerRadius(5)
-							
-							HStack{
+									.foregroundColor(Color("blackCustom"))
+									.background(Color("tagBG"))
+									.cornerRadius(5)
 								
-								Image(systemName: "calendar.circle.fill")
-									.foregroundColor(Color.white)
-								
-								Text(dateToString(taskDeadlineString:taskDate))
-									.font(.custom("Poppins-Regular", size: 16))
-									.foregroundColor(Color.white)
+								HStack{
+									
+									Image(systemName: "calendar.circle.fill")
+										.foregroundColor(Color.white)
+									
+									Text(dateToString(taskDeadlineString:taskDate))
+										.font(.custom("Poppins-Regular", size: 16))
+										.foregroundColor(Color.white)
+								}
 							}
-						}.padding(.init(top: 25, leading: 20, bottom: 0, trailing: 20))
-					)
-					.shadow(radius: 3)
-					.edgesIgnoringSafeArea(.all)
-					.position(x: 195, y: 100)
-				
-				Image("reflectionBG")
-					.resizable()
-					.frame(width: 343, height: 499, alignment: .center)
-					.scaledToFit()
+								.padding(.init(top: 25, leading: 20, bottom: 0, trailing: 20))
+						)
+						.shadow(radius: 3)
+						.edgesIgnoringSafeArea(.all)
+						//.position(x: 195, y: 100)
+					
+					Spacer()
+					
+					Image("reflectionBG")
+						.resizable()
+						.frame(width: 343, height: 499, alignment: .center)
+						.scaledToFit()
 					//.shadow(radius: 3)
-					.edgesIgnoringSafeArea(.all)
-					.position(x: 195, y: 10)
-					.overlay(
-						
-					Text("\(taskReflection)")
-						.frame(width: 260, height: 300, alignment: .center)
-						.background(Color.white)
-						.position(x: 175, y: 20)
-						.padding(.trailing)
-					)
-			}
-			.navigationBarTitle("Reflection", displayMode: .inline)
-			.toolbar{
-				ToolbarItem(placement: .navigationBarLeading){
-					Button("Back"){
-						dismiss()
+						.edgesIgnoringSafeArea(.all)
+						//.position(x: 195, y: 10)
+						.overlay(
+							Text("\(taskReflection)")
+								.frame(width: 260, height: 300, alignment: .center)
+								.background(Color.clear)
+								//.position(x: 175, y: 20)
+								.padding(.init(top: 0, leading: 0, bottom: 0, trailing: 25))
+						)
+				}
+				.navigationBarTitle("Reflection", displayMode: .inline)
+				
+				.toolbar{
+					ToolbarItem(placement: .navigationBarLeading){
+						Button("Back"){
+							dismiss()
+						}
 					}
 				}
 			}
-		}
+			.edgesIgnoringSafeArea(.top)}
+		
 	}
 }
 
@@ -107,4 +116,5 @@ func dateToString(taskDeadlineString: Date)->String{
 	return dateFormatter.string(from: taskDeadlineString)
 	
 }
+
 
