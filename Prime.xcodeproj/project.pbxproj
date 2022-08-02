@@ -14,7 +14,6 @@
 		7E3999E1288CE6410072C7BD /* PrimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3999E0288CE6410072C7BD /* PrimeTests.swift */; };
 		7E3999EB288CE6410072C7BD /* PrimeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3999EA288CE6410072C7BD /* PrimeUITests.swift */; };
 		7E3999ED288CE6410072C7BD /* PrimeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3999EC288CE6410072C7BD /* PrimeUITestsLaunchTests.swift */; };
-		7ED42840289520E800446E74 /* ReflectionFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED4283F289520E800446E74 /* ReflectionFile.swift */; };
 		7EFE242A2892D9DF009CA1A8 /* Poppins-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7EFE24172892D9DF009CA1A8 /* Poppins-LightItalic.ttf */; };
 		7EFE242B2892D9DF009CA1A8 /* Poppins-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7EFE24182892D9DF009CA1A8 /* Poppins-BoldItalic.ttf */; };
 		7EFE242C2892D9DF009CA1A8 /* Poppins-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7EFE24192892D9DF009CA1A8 /* Poppins-ExtraLightItalic.ttf */; };
@@ -73,7 +72,6 @@
 		7E3999E6288CE6410072C7BD /* PrimeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrimeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E3999EA288CE6410072C7BD /* PrimeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimeUITests.swift; sourceTree = "<group>"; };
 		7E3999EC288CE6410072C7BD /* PrimeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimeUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		7ED4283F289520E800446E74 /* ReflectionFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReflectionFile.swift; sourceTree = "<group>"; };
 		7EFE24172892D9DF009CA1A8 /* Poppins-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-LightItalic.ttf"; sourceTree = "<group>"; };
 		7EFE24182892D9DF009CA1A8 /* Poppins-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-BoldItalic.ttf"; sourceTree = "<group>"; };
 		7EFE24192892D9DF009CA1A8 /* Poppins-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
@@ -163,7 +161,6 @@
 				7EFE24452892DF40009CA1A8 /* QuoteText.swift */,
 				7EFE24472892DF55009CA1A8 /* TaskPlanner.swift */,
 				7EFE244B2892DFB4009CA1A8 /* ReflectionView.swift */,
-				7ED4283F289520E800446E74 /* ReflectionFile.swift */,
 				7EFE24162892D9C6009CA1A8 /* Poppins */,
 				7E3999D3288CE6410072C7BD /* Persistence.swift */,
 				7E3999CE288CE6410072C7BD /* Assets.xcassets */,
@@ -375,7 +372,6 @@
 			files = (
 				7EFE24422892DE71009CA1A8 /* DynamicFilteredView.swift in Sources */,
 				7EFE244C2892DFB4009CA1A8 /* ReflectionView.swift in Sources */,
-				7ED42840289520E800446E74 /* ReflectionFile.swift in Sources */,
 				7E3999D4288CE6410072C7BD /* Persistence.swift in Sources */,
 				7EFE24442892DEC0009CA1A8 /* TaskPlannerViewModel.swift in Sources */,
 				7EFE244A2892DF9A009CA1A8 /* PriorityGuideView.swift in Sources */,

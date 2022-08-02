@@ -28,15 +28,21 @@ struct TaskPlanner: View {
 	let taskPriorityOption = ["#1 Do First", "#2 Schedule", "#3 Delegate", "#4 Don't Do"]
 	let taskDurationOption = ["15 min", "30 min", "45 min", "1 hr", "1 hr 15 min", "1 hr 30 min", "1 hr 45 min", "2 hr"]
 	
-	let textLimit = 15
+	let textLimit = 150
 	let dateFormatter = DateFormatter()
 	
-	//	init() {
-	//		UITableView.appearance().separatorStyle = .none
-	//		UITableViewCell.appearance().backgroundColor = .white
-	//		UITableView.appearance().backgroundColor = .white
-	//		UINavigationBar.appearance().backgroundColor = .white
-	//	}
+			init() {
+				UITableView.appearance().separatorStyle = .none
+				UITableViewCell.appearance().backgroundColor = .white
+				UITableView.appearance().backgroundColor = .white
+//				UINavigationBar.appearance().backgroundColor = .white
+				//Use this if NavigationBarTitle is with Large Font
+				UINavigationBar.appearance().largeTitleTextAttributes = [.foregroundColor: UIColor.orange]
+				
+				//Use this if NavigationBarTitle is with displayMode = .inline
+				UINavigationBar.appearance().titleTextAttributes = [.foregroundColor: UIColor.orange]
+				//UINavigationBar.appearance().backgroundColor = UIColor.clear
+			}
 	
 	var body: some View {
 		
@@ -63,7 +69,7 @@ struct TaskPlanner: View {
 					//INIIIIIII
 					
 					Section{
-						DatePicker("Select Date", selection: $taskDeadline, displayedComponents: .date)
+						DatePicker("Select Date", selection: $taskDeadline, in: Date()...,  displayedComponents: .date)
 					} header: {
 						Text ("When is the deadline?").font(Font.custom("Poppins-Regular", size: 14))
 					}.listRowBackground(Color("blackCustom").opacity(0.02))
@@ -149,7 +155,7 @@ struct TaskPlanner: View {
 						
 						dismiss()
 					}
-					.foregroundColor(Color("secondaryColor"))
+					.foregroundColor(Color("blackCustom"))
 				}
 				
 				ToolbarItem(placement: .navigationBarLeading){
@@ -157,7 +163,7 @@ struct TaskPlanner: View {
 						dismiss()
 					}label: {
 						Text("Cancel")
-							.foregroundColor(Color("secondaryColor"))
+							.foregroundColor(Color("blackCustom"))
 					}
 				}
 			}

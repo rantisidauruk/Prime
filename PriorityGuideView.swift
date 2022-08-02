@@ -19,6 +19,13 @@ struct PriorityGuideView: View{
 	var body: some View{
 		NavigationView{
 			VStack(spacing: -10){
+				Text ("Determine your priority level based on the information below")
+					.foregroundColor(Color("blackCustom"))
+					.font(.custom("Poppins-Regular", size: 16))
+					.padding(16)
+					.multilineTextAlignment(.center)
+					.textCase(nil)
+					
 				RoundedRectangle(cornerRadius: 5).fill(Color("priorityOneBG"))
 					.frame(width: 345, height: 100)
 					.padding(16)
@@ -110,16 +117,18 @@ struct PriorityGuideView: View{
 						}
 					)
 			}
-			.padding(.init(top: -150, leading: 0, bottom: 0, trailing: 0))
+			.padding(.init(top: -100, leading: 0, bottom: 0, trailing: 0))
 			.toolbar{
 				ToolbarItem(placement: .navigationBarLeading){
 					Button("Back"){
 						dismiss()
 					}
+					.foregroundColor(Color("blackCustom"))
+					.font(.custom("Poppins-Regular", size: 16))
+					.textCase(nil)
 				}
 			}
-			.navigationBarTitle(Text("Priority Guide")).navigationBarHidden(false)
-			.navigationBarTitle("", displayMode: .inline)
+			//.navigationBarTitle("Priority Guide", displayMode: .inline)
 		}
 	}
 }

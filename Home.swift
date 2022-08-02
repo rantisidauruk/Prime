@@ -180,7 +180,7 @@ struct Home: View {
 									) {
 										taskModel.editTask = task
 										taskModel.addNewTask.toggle()
-									//	task.isCompleted = true
+										//	task.isCompleted = true
 									}
 								)
 							}
@@ -215,7 +215,7 @@ struct Home: View {
 							.foregroundColor(Color("blackCustom"))
 							.background(Color("tagBG"))
 							.cornerRadius(5)
-												Text(deadlineToString(taskDeadlineString:task.taskDeadline ?? Date()))
+						Text(deadlineToString(taskDeadlineString:task.taskDeadline ?? Date()))
 							.font(.custom("Poppins-Regular", size: 16))
 							.foregroundColor(Color("blackCustom"))
 						

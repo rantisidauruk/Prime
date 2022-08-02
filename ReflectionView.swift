@@ -76,7 +76,7 @@ struct ReflectionView: View {
 						)
 						.shadow(radius: 3)
 						.edgesIgnoringSafeArea(.all)
-						//.position(x: 195, y: 100)
+					//.position(x: 195, y: 100)
 					
 					Spacer()
 					
@@ -86,12 +86,12 @@ struct ReflectionView: View {
 						.scaledToFit()
 					//.shadow(radius: 3)
 						.edgesIgnoringSafeArea(.all)
-						//.position(x: 195, y: 10)
+					//.position(x: 195, y: 10)
 						.overlay(
 							Text("\(taskReflection)")
 								.frame(width: 260, height: 300, alignment: .center)
 								.background(Color.clear)
-								//.position(x: 175, y: 20)
+							//.position(x: 175, y: 20)
 								.padding(.init(top: 0, leading: 0, bottom: 0, trailing: 25))
 						)
 				}
@@ -102,6 +102,7 @@ struct ReflectionView: View {
 						Button("Back"){
 							dismiss()
 						}
+						.foregroundColor(.white)
 					}
 				}
 			}
