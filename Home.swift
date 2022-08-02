@@ -70,14 +70,17 @@ struct Home: View {
 									
 								}
 								.foregroundStyle(taskModel.isToday(date: day) ? .primary : .tertiary)
-								.foregroundColor(taskModel.isToday(date: day) ? .white : .black)
+								.foregroundColor(taskModel.isToday(date: day) ? .white : Color("blackCustom"))
 								.frame(width: 60, height: 90)
 								.background(
 									ZStack{
 										if taskModel.isToday(date: day){
 											RoundedRectangle(cornerRadius: 5)
-												.fill(.black)
+												.fill(Color("blackCustom"))
 												.matchedGeometryEffect(id: "CURRENTDAY", in: animation)
+										} else {
+											RoundedRectangle(cornerRadius: 5)
+												.fill(Color("blackCustom").opacity(0.02))
 										}
 									}
 								)

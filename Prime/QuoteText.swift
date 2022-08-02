@@ -9,7 +9,7 @@ import SwiftUI
 
 struct QuoteText: View{
 	var body: some View{
-		Text("Nothing is a waste of time if you use the experience wisely.” — Rodin")
+		Text("”Nothing is a waste of time \nif you use the experience wisely.” — Rodin")
 			.foregroundColor(Color.white)
 			.multilineTextAlignment(.center)
 	}
